@@ -1,62 +1,221 @@
-# 🔍 VERIFAI — AI-Powered Misinformation Detection Platform
+<div align="center">
 
-## 📌 Problem Statement
+# 🔍 VERIFAI
+### AI-Powered Misinformation Detection Platform
 
-The rapid growth of digital media and generative AI has made misinformation more convincing and harder to detect. Fake news, AI-generated images, and manipulated content spread quickly across platforms, impacting **public trust, elections, financial decisions, and public safety**.
+**Detect fake news, AI-generated images, and manipulated content — with transparent, explainable results.**
 
-Most existing solutions are **fragmented**, focus on only one content type (text or image), and provide results without transparency—leaving users unsure *why* something is flagged as false or misleading.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Backend-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Ollama](https://img.shields.io/badge/Ollama-Llama%203.2-orange?style=flat)](https://ollama.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[Demo](#-demo) · [Features](#-key-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [Architecture](#-architecture) · [Contributing](#-contributing)
+
+</div>
 
 ---
 
-## 💡 Solution Overview — VERIFAI
+## 📌 Problem Statement
+
+The rapid growth of digital media and generative AI has made misinformation more convincing and harder to detect. Fake news, AI-generated images, and manipulated content spread quickly across platforms — impacting public trust, elections, financial decisions, and public safety.
+
+Most existing solutions:
+- Are **fragmented** across tools
+- Focus on only **one content type** (text *or* image, rarely both)
+- Return a verdict **without explaining why** — leaving users unable to judge credibility for themselves
+
+**VERIFAI** was built to close that gap.
+
+---
+
+## 💡 Solution Overview
 
 **VERIFAI** is an all-in-one, **explainable AI** platform that verifies both **text and images** to detect misinformation and AI-generated or manipulated content.
 
-It goes beyond simple true/false labels by providing:
+Instead of a simple true/false label, VERIFAI provides:
 
-- 📊 **Authenticity Scores**
-- 🧠 **Explainable AI Reasoning**
-- 🌍 **Multilingual Support**
-- 🔗 **Cross-checking with Trusted Sources**
-
-VERIFAI empowers users to make **confident, informed decisions** and helps stop the spread of misinformation at scale.
+| Capability | Description |
+|---|---|
+| 📊 **Authenticity Score** | A quantified confidence score instead of a binary verdict |
+| 🧠 **Explainable Reasoning** | Human-readable explanation of *why* content was flagged |
+| 🌍 **Multilingual Support** | Analyze and translate content across languages |
+| 🔗 **Source Cross-Checking** | Verifies claims against trusted, real-world sources |
 
 ---
 
 ## 🚀 Key Features
 
-- ✅ Text & Image Verification  
-- 🤖 AI-Generated Content Detection  
-- 🧬 Manipulation & Deepfake Detection  
-- 🌐 Cross-Reference with Trusted Sources  
-- 📈 Authenticity Score with Explanation  
-- 🌍 Multilingual Analysis & Translation  
-- 🔐 Secure & Scalable Architecture  
+- ✅ **Text & Image Verification** — single platform for both content types
+- 🤖 **AI-Generated Content Detection** — flags text/images likely produced by generative AI
+- 🧬 **Manipulation & Deepfake Detection** — identifies tampered or synthetic media
+- 🌐 **Cross-Reference Engine** — validates claims against trusted external sources
+- 📈 **Explainable Authenticity Score** — transparent scoring with reasoning, not a black box
+- 🌍 **Multilingual Analysis & Translation** — supports non-English content out of the box
+- 🔐 **Secure & Scalable Architecture** — built with production-readiness in mind
+
+---
+
+## 🎥 Demo
+
+> Add a screenshot, GIF, or hosted link here so recruiters can see it in 5 seconds.
+
+```
+<img width="1858" height="880" alt="image" src="https://github.com/user-attachments/assets/3cf379be-0929-4b80-aed7-2d78b079310a" />
+<img width="1871" height="994" alt="image" src="https://github.com/user-attachments/assets/0f7c50e2-f336-421e-925c-7322be624697" />
+```
+
+🔗 **Live Demo:**[(https://verifai-lh2n.onrender.com/)]
+---
+
+## 🏗 Architecture
+
+```
+<img width="862" height="544" alt="image" src="https://github.com/user-attachments/assets/2879c683-9276-454d-97ac-bb74de69cdb1" />
+```
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Flask (Python)  
-- **AI/ML:** Ollama with Llama 3.2  
-- **APIs:** Google Custom Search API, Translation API  
-- **Content Extraction:** BeautifulSoup, Trafilatura  
-- **Email:** Flask-Mail  
+**Frontend**
+- HTML, CSS, JavaScript
+
+**Backend**
+- Flask (Python)
+
+**AI / ML**
+- Ollama running Llama 3.2 for reasoning and explanation generation
+
+**APIs & Integrations**
+- Google Custom Search API — trusted source cross-checking
+- Translation API — multilingual support
+- Flask-Mail — email notifications
+
+**Content Extraction**
+- BeautifulSoup, Trafilatura — web scraping & article extraction
+
+---
+
+## 📂 Project Structure
+
+```
+verifai/
+├── app.py                  # Flask application entry point
+├── config.py                # App configuration
+├── requirements.txt          # Python dependencies
+├── static/                   # CSS, JS, images
+├── templates/                 # HTML templates
+├── modules/
+│   ├── text_verifier.py       # Text/misinformation analysis
+│   ├── image_verifier.py      # Image/deepfake detection
+│   ├── cross_reference.py     # Source verification logic
+│   └── translator.py          # Multilingual handling
+├── utils/
+│   └── extractor.py           # Content extraction helpers
+└── README.md
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Python 3.10+
+- [Ollama](https://ollama.com/) installed locally with the `llama3.2` model pulled
+- Google Custom Search API key
+- Translation API key
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/HemanshuSonar/VerifAi.git
+cd VerifAi
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Pull the required LLM model
+ollama pull llama3.2
+
+# 5. Configure environment variables
+cp .env.example .env
+# Add your API keys and secrets to .env
+
+# 6. Run the application
+python app.py
+```
+
+The app will be available at `http://localhost:5000`.
+
+### Environment Variables
+
+```
+GOOGLE_SEARCH_API_KEY=your_key_here
+TRANSLATION_API_KEY=your_key_here
+MAIL_USERNAME=your_email
+MAIL_PASSWORD=your_password
+SECRET_KEY=your_flask_secret_key
+```
+
+---
+
+## 🧪 Usage
+
+1. Open the web app and choose **Text** or **Image** verification.
+2. Paste text or upload an image.
+3. VERIFAI analyzes the content using the LLM pipeline, cross-references trusted sources, and returns:
+   - An **authenticity score**
+   - A plain-language **explanation**
+   - Relevant **source links**
 
 ---
 
 ## 🎯 Impact
 
-VERIFAI helps:
+VERIFAI helps to:
+- 🧑‍🤝‍🧑 Help users identify and avoid fake news
+- 🗳 Protect democratic processes from disinformation
+- 💼 Prevent financial fraud driven by fake content
+- 🚨 Improve public safety and trust in digital media
 
-- 🧑‍🤝‍🧑 Users avoid fake news  
-- 🗳 Protect democratic processes  
-- 💼 Prevent financial fraud  
-- 🚨 Improve public safety and trust in digital media  
+---
+
+## 🗺 Roadmap
+
+- [ ] Browser extension for real-time verification
+- [ ] Video/deepfake detection support
+- [ ] Public REST API for developers
+- [ ] Mobile app (iOS/Android)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Author
+
+**Hemanshu Sonar**
+📧 hemanshusonar77@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/hemanshusonar/)
+
+</div>
