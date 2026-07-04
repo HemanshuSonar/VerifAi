@@ -66,7 +66,7 @@ Instead of a simple true/false label, VERIFAI provides:
 <img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/02add9e5-bfaf-477d-97ba-0d3ff942cd22" />
 
 
-🔗 *Live Demo:* https://verifai-lh2n.onrender.com/
+🔗 Live Demo: https://verifai-lh2n.onrender.com/
 ---
 
 ## 🏗 Architecture
