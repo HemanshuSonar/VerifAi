@@ -58,21 +58,17 @@ Instead of a simple true/false label, VERIFAI provides:
 
 ## 🎥 Demo
 
-> Add a screenshot, GIF, or hosted link here so recruiters can see it in 5 seconds.
-
-```
+> Screenshots.
+> 
 <img width="1858" height="880" alt="image" src="https://github.com/user-attachments/assets/3cf379be-0929-4b80-aed7-2d78b079310a" />
 <img width="1871" height="994" alt="image" src="https://github.com/user-attachments/assets/0f7c50e2-f336-421e-925c-7322be624697" />
-```
 
-🔗 **Live Demo:**[(https://verifai-lh2n.onrender.com/)]
+🔗 **Live Demo:** https://verifai-lh2n.onrender.com/
 ---
 
 ## 🏗 Architecture
 
-```
 <img width="862" height="544" alt="image" src="https://github.com/user-attachments/assets/2879c683-9276-454d-97ac-bb74de69cdb1" />
-```
 
 ---
 
