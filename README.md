@@ -59,16 +59,19 @@ Instead of a simple true/false label, VERIFAI provides:
 ## 🎥 Demo
 
 > Screenshots.
-> 
-<img width="1858" height="880" alt="image" src="https://github.com/user-attachments/assets/3cf379be-0929-4b80-aed7-2d78b079310a" />
-<img width="1871" height="994" alt="image" src="https://github.com/user-attachments/assets/0f7c50e2-f336-421e-925c-7322be624697" />
 
-🔗 **Live Demo:** https://verifai-lh2n.onrender.com/
+<img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/9655e506-1867-490c-a8aa-5d23ff1f3f9b" />
+<img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/bddb13d1-acd5-4206-a36f-85c633d5b5a3" />
+<img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/d231b9f2-1100-4579-9638-2969eb40334d" />
+<img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/02add9e5-bfaf-477d-97ba-0d3ff942cd22" />
+
+
+🔗 *Live Demo:* https://verifai-lh2n.onrender.com/
 ---
 
 ## 🏗 Architecture
 
-<img width="862" height="544" alt="image" src="https://github.com/user-attachments/assets/2879c683-9276-454d-97ac-bb74de69cdb1" />
+<img width="1121" height="526" alt="image" src="https://github.com/user-attachments/assets/2879c683-9276-454d-97ac-bb74de69cdb1" />
 
 ---
 
